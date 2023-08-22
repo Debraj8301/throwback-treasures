@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://memories-api.pulkitchauhan.me/' });
+const API = axios.create({ baseURL: 'https://throwback-server.onrender.com' });
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')) {
